@@ -1,0 +1,48 @@
+<div class="simulation">
+  <div class="mb-5 col-3 mx-auto">
+    <label for="NoOfGames" class="form-label"
+      >Enter number of games to simulate</label
+    >
+    <div class="input-group">
+      <input
+        type="number"
+        id="NoOfGames"
+        class="form-control"
+        [(ngModel)]="inputValue"
+        aria-label="NoOfGames"
+        aria-describedby="basic-addon1"
+      />
+    </div>
+  </div>
+  <div class="mb-5 col-3 mx-auto">
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="flexRadioDefault"
+        [(ngModel)]="selectedRadioButton"
+        value="true"
+        id="switchDoor"
+      />
+      <label class="form-check-label" for="switchDoor"> Switch Doors </label>
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input"
+        type="radio"
+        name="flexRadioDefault"
+        value="false"
+        [(ngModel)]="selectedRadioButton"
+        id="notSwitchDoor"
+        checked
+      />
+      <label class="form-check-label" for="notSwitchDoor">
+        Stick with Initial Choice
+      </label>
+    </div>
+  </div>
+
+  <button (click)="onClickSimulate()" class="btn btn-outline-warning">
+    GO
+  </button>
+</div>

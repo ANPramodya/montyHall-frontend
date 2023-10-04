@@ -1,0 +1,50 @@
+[
+    {
+      "gameId": 0,
+      "prizeDoor": 3,
+      "playerInitialChoice": 2,
+      "hostOpenedDoor": 1,
+      "playerSwitched": true,
+      "playerWon": true
+    },
+    {
+      "gameId": 1,
+      "prizeDoor": 1,
+      "playerInitialChoice": 1,
+      "hostOpenedDoor": 2,
+      "playerSwitched": true,
+      "playerWon": false
+    },
+    {
+      "gameId": 2,
+      "prizeDoor": 3,
+      "playerInitialChoice": 2,
+      "hostOpenedDoor": 1,
+      "playerSwitched": true,
+      "playerWon": true
+    },
+    {
+      "gameId": 3,
+      "prizeDoor": 3,
+      "playerInitialChoice": 1,
+      "hostOpenedDoor": 2,
+      "playerSwitched": true,
+      "playerWon": true
+    },
+    {
+      "gameId": 4,
+      "prizeDoor": 2,
+      "playerInitialChoice": 3,
+      "hostOpenedDoor": 1,
+      "playerSwitched": true,
+      "playerWon": true
+    },
+    {
+      "gameId": 5,
+      "prizeDoor": 2,
+      "playerInitialChoice": 1,
+      "hostOpenedDoor": 3,
+      "playerSwitched": true,
+      "playerWon": true
+    }
+  ]

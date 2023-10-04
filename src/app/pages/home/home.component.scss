@@ -1,0 +1,18 @@
+.home {
+  padding: 20px;
+  // background: linear-gradient(to bottom right, transparent 70%, #8e24aa);
+}
+
+.img-container {
+  -webkit-mask-image: radial-gradient(black, transparent);
+  mask-image: radial-gradient(black, transparent);
+}
+
+.fit-image {
+  max-width: 500px;
+  height: auto;
+}
+
+.btn {
+  font-size: 25px;
+}
