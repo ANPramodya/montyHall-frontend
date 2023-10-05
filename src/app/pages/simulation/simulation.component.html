@@ -45,4 +45,58 @@
   <button (click)="onClickSimulate()" class="btn btn-outline-warning">
     GO
   </button>
+
+  <div class="doors" *ngIf="showResults">
+    <div class="row">
+      <div class="col">
+        <img src="../../../assets/door.png" alt="" />
+        <p>Door 1</p>
+      </div>
+      <div class="col">
+        <img src="../../../assets/door.png" alt="" />
+        <p>Door 2</p>
+      </div>
+      <div class="col">
+        <img src="../../../assets/door.png" alt="" />
+        <p>Door 3</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="result" *ngIf="showResults">
+    <h4>Simulation Result</h4>
+    <p>Won {{ winCount }} from {{ response.length }} games</p>
+    <p>Rate {{ (winCount / response.length) * 100 }}%</p>
+    <div class="table-responsive result-container">
+      <table class="table table-striped table-dark table-hover result-table">
+        <thead>
+          <th scope="col" class="col">Game ID</th>
+          <th scope="col" class="col">Prize Door</th>
+          <th scope="col" class="col">Initial Choice</th>
+          <th scope="col" class="col">Host Opened Door</th>
+          <th scope="col" class="col">Switched?</th>
+          <th scope="col" class="col">Won/Lost</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let game of response">
+            <td>{{ game.gameId }}</td>
+            <td>{{ game.prizeDoor }}</td>
+            <td>{{ game.playerInitialChoice }}</td>
+            <td>{{ game.hostOpenedDoor }}</td>
+            <td>{{ game.playerSwitched ? "Switched" : "No" }}</td>
+            <td>{{ game.playerWon ? "Won" : "Lost" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="solution" *ngIf="showResults">
+    <h4>Still Not Convinced?</h4>
+    <h4>Check This Out</h4>
+    <br />
+    <button (click)="onClickSolution()" class="btn btn-outline-warning">
+      Try Bigger
+    </button>
+  </div>
 </div>

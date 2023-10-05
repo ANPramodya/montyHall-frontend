@@ -1,1 +1,25 @@
-<p>solution works!</p>
+<div class="solution-container">
+  <p>What if it's not just 3 doors?</p>
+  <button (click)="chooseDoor()" class="btn btn-outline-warning" *ngIf="!show">
+    Choose door
+  </button>
+  <div class="row">
+    <div class="col-4" *ngFor="let door of doors; let i = index">
+      <img
+        [src]="
+          door.selected
+            ? '../../../assets/selected-door.png'
+            : door.open
+            ? '../../../assets/open_door.png'
+            : '../../../assets/door.png'
+        "
+        [class.selected]="door.selected"
+        [class.open]="door.open"
+      />
+    </div>
+  </div>
+  <div class="content" *ngIf="show">
+    <p>You chose door 1. Host opened 10 doors</p>
+    <h4>Will You Consider Switching Now?</h4>
+  </div>
+</div>

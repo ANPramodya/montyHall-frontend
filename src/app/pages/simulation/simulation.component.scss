@@ -1,6 +1,26 @@
 .simulation {
   padding: 30px;
+}
 
-  .form-control {
+.doors {
+  img {
+    height: 300px;
+    width: auto;
   }
+  margin-bottom: 30px;
+}
+
+.result {
+  margin-bottom: 40px;
+  .result-container {
+    width: 100%;
+
+    .result-table {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.solution {
 }
